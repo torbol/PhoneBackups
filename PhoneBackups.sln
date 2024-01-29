@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.8.34511.84
+VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBackups", "PhoneBackups\PhoneBackups.csproj", "{F389DC08-43E4-46AB-96F7-A8D76E591DD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBackups", "PhoneBackups\PhoneBackups.csproj", "{96307EFC-D23F-43FE-B224-332A976DEC0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F389DC08-43E4-46AB-96F7-A8D76E591DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F389DC08-43E4-46AB-96F7-A8D76E591DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F389DC08-43E4-46AB-96F7-A8D76E591DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F389DC08-43E4-46AB-96F7-A8D76E591DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96307EFC-D23F-43FE-B224-332A976DEC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96307EFC-D23F-43FE-B224-332A976DEC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96307EFC-D23F-43FE-B224-332A976DEC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96307EFC-D23F-43FE-B224-332A976DEC0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D093C7E5-32FE-4763-BCD1-9A8FBC49D6F0}
+		SolutionGuid = {BA9AD902-C2D4-444D-9E21-697779FA5BC7}
 	EndGlobalSection
 EndGlobal
