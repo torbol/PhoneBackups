@@ -6,7 +6,8 @@ Luego tenemos que pulsar el primer botón "Start Daemon and connect"
 ![image](https://github.com/torbol/PhoneBackups/assets/99366541/9ec474b2-eb97-4913-9c16-3435c625f316)
 
 Nos saldrá un mensaje en nuestro móvil, seleccionamos "Permitir siempre" y aceptamos. En este momento el movil quedará conectado, podemos comprobarlo en la casilla que pone "phone detected", debería estar tildada.
-![image](https://github.com/torbol/PhoneBackups/assets/99366541/56df44fb-cc68-43d6-bfe7-a69694eaf898)
+![image](https://github.com/torbol/PhoneBackups/assets/99366541/ffbf59b1-07c5-457e-b12b-fff2bbb2046a)
+
 
 Por último presionando el botón "Backup" comenzará la copia de los archivos:
 ![image](https://github.com/torbol/PhoneBackups/assets/99366541/2f0c7b03-7f4b-41d5-a1bf-e481fbae6509)
