@@ -94,6 +94,10 @@ namespace PhoneBackups
             process.WaitForExit();
             if (process.ExitCode == 0)
             {
+                process.StartInfo.CreateNoWindow = true;    // Para que no salga prompt cuando ejecutemos proceso
+                process.StartInfo.Arguments = "kill-server";    // Si termina la copia exitosamente, se cierra ADB para que no corra en segundo plano
+                process.Start();
+                process.WaitForExit();
                 this.textBox1.Clear();
                 this.textBox1.AppendText("Finished!");
                 MessageBox.Show("The back up process has finished successfully, you'll find the backup copy inside \"\\sdcard\" folder", "Finished", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -101,6 +105,10 @@ namespace PhoneBackups
             }
             else
             {
+                process.StartInfo.CreateNoWindow = true;    // Para que no salga prompt cuando ejecutemos proceso
+                process.StartInfo.Arguments = "kill-server";    // Si falla la copia, se cierra ADB para que no corra en segundo plano
+                process.Start();
+                process.WaitForExit();
                 this.textBox1.Clear();
                 this.textBox1.AppendText("Error! Try to make a new backup");
                 MessageBox.Show("Error while copying files", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
