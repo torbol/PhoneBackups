@@ -67,7 +67,7 @@ namespace PhoneBackups
 
             }
             else
-                    MessageBox.Show("Phone not detected, push the first button instead","Phone connection failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Phone not detected, push the first button instead","Phone connection failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
         private void CheckBox1_phonedetected_CheckedChanged(object sender, EventArgs e)
@@ -79,19 +79,19 @@ namespace PhoneBackups
         {
             // Arrancamos el proceso "hijo"
             Process process = new Process();
-            // Redirigimos la salida del proceso para poder capturarla desde nuestro programa
+            // Redirigimos la salida del proceso para poder capturarla desde nuestro programa (false)
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardOutput = false;
             process.StartInfo.RedirectStandardError = false;
             //process.StartInfo.FileName = "C:\\Users\\josea\\Documents\\Visual Studio 2022\\Programas Propios Github\\PhoneBackups\\PhoneBackups\\Binarios\\adb.exe"; // Arrancamos el servidor de ADB desde visual studio
             process.StartInfo.FileName = ".\\Binarios\\adb.exe"; // Arrancamos el servidor de ADB
-            process.StartInfo.Arguments = "pull -a -p /sdcard";
+            process.StartInfo.Arguments = "pull -a /sdcard";
             process.StartInfo.CreateNoWindow = false;    // Para que no salga prompt cuando ejecutemos proceso
             this.textBox1.Clear();
             this.textBox1.AppendText("The process will continue in a new window...");
             process.Start();
-
             process.WaitForExit();
+
             if (process.ExitCode == 0)
             {
                 process.StartInfo.CreateNoWindow = true;    // Para que no salga prompt cuando ejecutemos proceso
